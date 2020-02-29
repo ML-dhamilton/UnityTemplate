@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf5b356e131a944286fec26d7c40b4e, type: 3}
   m_Name: MagicLeapManifestSettings
   m_EditorClassIdentifier: 
-  m_MinimumAPILevel: 6
+  m_MinimumAPILevel: 5
   m_Privileges:
   - name: LowLatencyLightwear
+    enabled: 1
+  - name: AddressBookBasicAccess
     enabled: 1
   - name: BackgroundDownload
     enabled: 1
@@ -22,6 +24,12 @@ MonoBehaviour:
     enabled: 1
   - name: BatteryInfo
     enabled: 1
+  - name: BluetoothAdapterExternalApp
+    enabled: 0
+  - name: BluetoothAdapterUser
+    enabled: 0
+  - name: BluetoothGattWrite
+    enabled: 0
   - name: ConnectBackgroundMusicService
     enabled: 1
   - name: ControllerPose
@@ -33,7 +41,7 @@ MonoBehaviour:
   - name: GesturesSubscribe
     enabled: 1
   - name: HandMesh
-    enabled: 1
+    enabled: 0
   - name: IdentityRead
     enabled: 1
   - name: InAppPurchase
@@ -47,7 +55,7 @@ MonoBehaviour:
   - name: Occlusion
     enabled: 0
   - name: PcfRead
-    enabled: 1
+    enabled: 0
   - name: PowerInfo
     enabled: 1
   - name: RegisterBackgroundMusicService
@@ -55,6 +63,8 @@ MonoBehaviour:
   - name: ScreensProvider
     enabled: 1
   - name: SecureBrowserWindow
+    enabled: 0
+  - name: SocialConnectionsInvitesAccess
     enabled: 1
   - name: WifiStatusRead
     enabled: 1
@@ -64,6 +74,8 @@ MonoBehaviour:
     enabled: 1
   - name: AddressBookWrite
     enabled: 1
+  - name: CoarseLocation
+    enabled: 1
   - name: LocalAreaNetwork
     enabled: 1
   - name: AudioCaptureMic
@@ -72,9 +84,9 @@ MonoBehaviour:
     enabled: 1
   - name: CameraCapture
     enabled: 1
-  - name: CoarseLocation
-    enabled: 1
   - name: ComputerVision
     enabled: 1
+  - name: FineLocation
+    enabled: 0
   - name: VoiceInput
     enabled: 1
